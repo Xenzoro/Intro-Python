@@ -1,0 +1,24 @@
+<!--this loads static files into this file-->
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    <meta charset="UTF-8">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <head>
+            <title>Is it New years?</title>
+            <!--this feels jank, but were letting django figure out where the files are stored-->
+            <link href="{% static 'newyear/styles.css' %}" rel="stylesheet"> </link>
+        </head>
+    <title>NEW YEARS?</title>
+<body>
+        <!-- syntax for logic in django is { % % } NEEDS THEM IN EACH LOGIC STATEMENT -->
+        {% if newyear %}
+            <h1>YES</h1>
+        {% else %}
+            <h1>NO</h1>
+        {% endif %}
+<!--        in django we have to do this to end an if statement?-->
+        </body>
+</html>
