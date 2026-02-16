@@ -4,7 +4,7 @@ import datetime
 # Create your views here.
 def index(request): #takes a request argument "an http request object""
     #return HttpResponse("Hello") #HttpResponse is a special class created by Django that takes a string and returns an HTTP response object that can be sent back to the client. in this case, we are returning a simple string "Hello World" as the response. when we visit the URL associated with this view, we will see "Hello World" displayed in the browser.
-    return render(request, "hello/index.html") #render is a shortcut function provided by Django that combines a given template with a given context dictionary and returns an HttpResponse object with that rendered text. in this case, we are rendering the template "hello/index.html" and returning it as the response. when we visit the URL associated with this view, we will see the content of the index.html template displayed in the browser.
+    return render(request, "hello/index.html.old") #render is a shortcut function provided by Django that combines a given template with a given context dictionary and returns an HttpResponse object with that rendered text. in this case, we are rendering the template "hello/index.html.old" and returning it as the response. when we visit the URL associated with this view, we will see the content of the index.html.old template displayed in the browser.
 
 def brian(request):
     return HttpResponse("Hello, Brian")

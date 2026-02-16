@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls), #defult admin page
     path('', include("hello.urls")),
     path('hello/', include("hello.urls")), #this line tells Django to include the URL patterns defined in the hello app's urls.py file whenever a URL starts with "hello/". this allows us to organize our URL patterns in a modular way, keeping the URL configuration for the hello app separate from the main project URLs. when a user visits a URL that starts with "hello/", Django will look for matching patterns in the hello app's urls.py file and route the request accordingly.
+    path('tasks/', include("tasks.urls")),
 ]

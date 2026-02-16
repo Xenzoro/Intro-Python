@@ -1,0 +1,16 @@
+{% extends "tasks/layout.html" %}
+
+
+{% block body %}
+    <h1>Tasks</h1>
+            <ul>
+                {% for task in tasks %}
+<!--                adds a look for task in tasks and for each task make a list var-->
+                    <li>{{ task }}</li>
+                {% empty %}
+                    <li>No tasks yet.</li>
+                {% endfor %}
+            </ul>
+            <!-- Django finds the correct file           -->
+            <a href="{% url 'tasks:add' %}">Add a new Task</a>
+ {% endblock %}

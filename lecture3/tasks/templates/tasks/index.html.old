@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <head>
+            <title>Tasks</title>
+        </head>
+        <body>
+            <ul>
+<!--                <li>item one</li> DONT WANNA DO THIS NOW-->
+<!--                <li>item two</li>-->
+<!--                <li>item three</li>-->
+
+                {% for task in tasks %}
+<!--                adds a look for task in tasks and for each task make a list var-->
+                    <li>{{ task }}</li>
+                {% endfor %}
+            </ul>
+        </body>
+</html>

@@ -1,0 +1,13 @@
+{% extends "tasks/layout.html" %}
+
+        {% block body %}
+            <h1>Add Task</h1>
+<!--            post means it can change the state of the site-->
+           <form action ="{% url 'tasks:add' %}" method="post" >
+                {% csrf_token %} <!-- this is a security measure that django has to prevent cross site request forgery, it is required for any form that uses post-->
+<!--               <input type="text" name="task"> OLD BLOCK OF CODE-->
+                    {{ form }} <!-- this is the new block of code, it will automatically generate the form for us, we just have to pass in the form from the view-->
+               <input type="submit">
+           </form>
+           <a href="{% url 'tasks:index' %}">View Tasks</a>
+        {% endblock %}
