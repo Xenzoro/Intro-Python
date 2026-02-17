@@ -196,7 +196,15 @@ Through these projects, I learned:
 
 ## 📝 Notes
 
-This repository includes PDF notes taken on my iPad during the CS50W course. These notes complement the code and provide additional context and explanations of the concepts covered.
+This repository includes **handwritten notes taken on my iPad** during the CS50W course. These notes complement the code and provide additional context and explanations of the concepts covered.
+
+### 📖 Available Notes
+
+- **[CS50 Django & Python](notes/C50%20Django-py.png)** - Comprehensive notes on Django framework and Python concepts
+- **[CS50 Python](notes/Cs50%20python-py.png)** - Core Python programming notes
+- **[CS50 SQL](notes/CS50%20SQL.png)** - Database and SQL concepts
+
+> 💡 **Tip:** These visual notes provide quick reference for key concepts and are great for review!
 
 ## 🛠️ Django Management Commands
 
@@ -231,6 +239,10 @@ Intro-Python/
 │   ├── hello/          # Hello world app
 │   ├── tasks/          # Task management app
 │   └── newyear/        # New Year checker app
+├── notes/               # 📝 iPad notes from CS50W
+│   ├── C50 Django-py.png
+│   ├── Cs50 python-py.png
+│   └── CS50 SQL.png
 └── README.md           # This file
 ```
 
