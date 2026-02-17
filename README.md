@@ -204,7 +204,7 @@ This repository includes **handwritten notes taken on my iPad** during the CS50W
 - **[CS50 Python](notes/Cs50%20python-py.png)** - Core Python programming notes
 - **[CS50 SQL](notes/CS50%20SQL.png)** - Database and SQL concepts
 
-> 💡 **Tip:** These visual notes provide quick reference for key concepts and are great for review!
+
 
 ## 🛠️ Django Management Commands
 
